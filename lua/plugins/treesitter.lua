@@ -14,6 +14,7 @@ return {
         bash,
         fish,
         python,
+        yaml,
       })
     end,
   },
