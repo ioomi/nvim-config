@@ -13,13 +13,14 @@ vim.opt.undofile = true
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.gdefault = true -- Use global substitution by default
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 vim.opt.inccommand = "split"
 
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 0
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 2

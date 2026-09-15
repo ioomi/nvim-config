@@ -12,6 +12,7 @@ return {
       wk.add({
         { "<leader>f", group = "Picker" },
         { "<leader>g", group = "Git" },
+        { "<leader>a", group = "AI" },
       })
     end,
     keys = {
