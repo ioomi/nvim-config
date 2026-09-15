@@ -38,4 +38,4 @@ vim.opt.signcolumn = "yes"
 -- obsidian.nvim
 vim.opt.conceallevel = 2
 
-vim.keymap.set("n", "gV", "`[v`]", { desc = "选择上次修改/粘贴的文本" })
+vim.keymap.set("n", "gV", "`[v`]", { desc = "Select the last changed or yanked text" })
