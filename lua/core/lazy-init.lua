@@ -23,7 +23,7 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  install = { colorscheme = { "mini-base16" } },
+  install = { colorscheme = { "gelato" } },
   checker = { enabled = true, notify = false },
   rocks = { hererocks = not is_nixos }, -- Always use luarocks on NixOS
 })

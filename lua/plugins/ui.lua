@@ -4,7 +4,7 @@ return {
     dependencies = { 'nvim-mini/mini.icons' },
     opts = {
       options = {
-        theme = "auto",
+        theme = "tinted",
         component_separators = "",
         section_separators = { left = "", right = "" },
       },
