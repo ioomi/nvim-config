@@ -12,7 +12,7 @@ return {
     },
 
     keys = {
-      { "<leader>ff", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+      { "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
       { "<leader>fg", function() Snacks.picker.grep() end, desc = "Grep" },
       { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
       { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
