@@ -39,3 +39,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.conceallevel = 2
 
 vim.keymap.set("n", "gV", "`[v`]", { desc = "Select the last changed or yanked text" })
+
+vim.keymap.set("n", "<M-h>", "<C-w>h", { desc = "Move to left window" })
+vim.keymap.set("n", "<M-j>", "<C-w>j", { desc = "Move to lower window" })
+vim.keymap.set("n", "<M-k>", "<C-w>k", { desc = "Move to upper window" })
+vim.keymap.set("n", "<M-l>", "<C-w>l", { desc = "Move to right window" })
