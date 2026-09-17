@@ -8,6 +8,13 @@ vim.schedule(function()
   vim.opt.clipboard = "unnamedplus"
 end)
 vim.opt.cursorline = true
+vim.opt.guicursor = {
+  "n-v-sm:block",
+  "i-ci-ve:ver25",
+  "c:ver25",
+  "r-cr-o:hor20",
+  "t:block-blinkon500-blinkoff500-TermCursor",
+}
 
 vim.opt.undofile = true
 
