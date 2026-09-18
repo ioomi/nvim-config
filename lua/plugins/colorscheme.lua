@@ -1,6 +1,7 @@
 return {
   {
     "cocoix/gelato.nvim",
+    dir = "/home/fzh/code/repos/gelato.nvim",
     lazy = false,
     priority = 1000,
     dependencies = {

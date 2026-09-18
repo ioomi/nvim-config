@@ -1,6 +1,10 @@
 vim.loader.enable()
 
 require("core.config")
-require("core.autocmd")
-require("core.command")
+
+if not vim.g.vscode then
+  require("core.autocmd")
+  require("core.command")
+end
+
 require("core.lazy-init")

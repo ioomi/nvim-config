@@ -1,4 +1,5 @@
 local is_nixos = vim.uv.fs_stat("/etc/NIXOS") ~= nil
+local is_vscode = vim.g.vscode ~= nil
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -21,11 +22,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { import = "plugins" },
+    { import = "plugins", cond = not is_vscode },
+    { import = "vscode.plugins", cond = is_vscode },
   },
-  install = { colorscheme = { "gelato" } },
-  checker = { enabled = true, notify = false },
+  install = { colorscheme = is_vscode and {} or { "gelato" } },
+  checker = { enabled = not is_vscode, notify = false },
   rocks = { hererocks = not is_nixos }, -- Always use luarocks on NixOS
 })
-
 
